@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: 'Kanit', sans-serif;
+  color: #ffffff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:
+    #3B5C97;
+  background-image: linear-gradient(to right top, #622648, #632f58, #613969, #5b4379, #514e87, #40578f, #2a5f95, #006798, #006e94, #00748b, #007881, #1e7c76);
+  height: 100%;
+}
+
+.slider {
+  display: grid;
+  grid-template-rows: 1fr 5rem;
+  grid-template-columns: 3fr 1fr;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  width: 65%;
+  max-width: 43.15rem;
+  border: 1px solid black;
+  background-color: #6525b6;
+  box-shadow: 5px 5px 0 #000000;
+}
+
+.slider__radio-control {
+  display: none;
+}
+
+.slider__wrapper {
+  grid-column: span 2;
+  width: 100%;
+  height: 28.125rem;
+  overflow: hidden;
+}
+
+.slider__slides {
+  display: flex;
+  width: 400%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider__slide {
+  width: 100%;
+  height: 28.125rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  scroll-snap-align: center;
+  flex-shrink: 0;
+}
+
+.slider__slide-1 {
+  background-image: url(images/mem-1.gif);
+}
+
+.slider__slide-2 {
+  background-image: url(images/mem-2.jpg);
+}
+
+.slider__slide-3 {
+  background-image: url(images/mem-3.gif);
+}
+
+.slider__slide-4 {
+  background-image: url(images/mem-4.jpg);
+}
+
+.slider__text-block {
+  font-size: 1.5rem;
+}
+
+.slider__text {
+  font-size: 0;
+  transition: all 0.5s ease-in;
+}
+
+.slider__controls {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.slider__control {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.slider__control-button {
+  display: block;
+  border-radius: 50%;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  transition: 0.5s ease;
+}
+
+.slider__control-button:hover {
+  background-color: #63baab;
+}
+
+.slider__control-button:active {
+  transform: scale(1.5);
+}
+
+#slide-1:checked~.slider__wrapper .slider__slides {
+  transform: translateX(0%);
+}
+
+#slide-2:checked~.slider__wrapper .slider__slides {
+  transform: translateX(-100%);
+}
+
+#slide-3:checked~.slider__wrapper .slider__slides {
+  transform: translateX(-200%);
+}
+
+#slide-4:checked~.slider__wrapper .slider__slides {
+  transform: translateX(-300%);
+}
+
+#slide-1:checked~.slider__controls .slider__control-button-1 {
+  background-color: transparent;
+  border: 0.2rem solid #ffffff;
+}
+
+#slide-2:checked~.slider__controls .slider__control-button-2 {
+  background-color: transparent;
+  border: 0.2rem solid #ffffff;
+}
+
+#slide-3:checked~.slider__controls .slider__control-button-3 {
+  background-color: transparent;
+  border: 0.2rem solid #ffffff;
+}
+
+#slide-4:checked~.slider__controls .slider__control-button-4 {
+  background-color: transparent;
+  border: 0.2rem solid #ffffff;
+}
+
+
+#slide-1:checked~.slider__text-block .slider__text--1 {
+  font-size: 1.5rem;
+}
+
+#slide-2:checked~.slider__text-block .slider__text--2 {
+  font-size: 1.5rem;
+}
+
+#slide-3:checked~.slider__text-block .slider__text--3 {
+  font-size: 1.5rem;
+}
+
+#slide-4:checked~.slider__text-block .slider__text--4 {
+  font-size: 1.5rem;
+}
