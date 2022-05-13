@@ -83,7 +83,9 @@ body {
 }
 
 .slider__text {
+  margin-top: 0;
   font-size: 0;
+  line-height: 2;
   transition: all 0.5s ease-in;
 }
 
