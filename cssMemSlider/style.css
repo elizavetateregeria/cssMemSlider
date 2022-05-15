@@ -19,10 +19,22 @@ img {
   height: auto;
 }
 
+h1 {
+  color: #121212;
+  font-size: 3rem;
+  text-shadow: -1px 1px 0 #41ba45,
+    1px 1px 0 #c63d2b,
+    1px -1px 0 #42afac,
+    -1px -1px 0 #c6c23f;
+  text-align: center;
+}
+
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
   background:
     #3B5C97;
   background-image: linear-gradient(to right top, #622648, #632f58, #613969, #5b4379, #514e87, #40578f, #2a5f95, #006798, #006e94, #00748b, #007881, #1e7c76);
@@ -189,6 +201,10 @@ img {
   }
 
   @media (max-width: 610px) {
+    h1 {
+      font-size: 2rem;
+    }
+
     .slider {
       row-gap: 1rem;
       column-gap: 0;
