@@ -49,7 +49,7 @@ h1 {
   padding: 1.5rem;
   width: 80%;
   max-width: 43.15rem;
-  border: 1px solid black;
+  border: 1px solid #000000;
   background-color: #6525b6;
   box-shadow: 5px 5px 0 #000000;
 }
@@ -127,39 +127,17 @@ h1 {
   transform: translateX(-75%);
 }
 
-#slide-1:checked~.slider__controls .slider__control-button-1 {
-  background-color: transparent;
-  border: 0.2rem solid #ffffff;
-}
-
-#slide-2:checked~.slider__controls .slider__control-button-2 {
-  background-color: transparent;
-  border: 0.2rem solid #ffffff;
-}
-
-#slide-3:checked~.slider__controls .slider__control-button-3 {
-  background-color: transparent;
-  border: 0.2rem solid #ffffff;
-}
-
+#slide-1:checked~.slider__controls .slider__control-button-1,
+#slide-2:checked~.slider__controls .slider__control-button-2,
+#slide-3:checked~.slider__controls .slider__control-button-3,
 #slide-4:checked~.slider__controls .slider__control-button-4 {
   background-color: transparent;
   border: 0.2rem solid #ffffff;
 }
 
-
-#slide-1:checked~.slider__text-block .slider__text--1 {
-  font-size: 1.5rem;
-}
-
-#slide-2:checked~.slider__text-block .slider__text--2 {
-  font-size: 1.5rem;
-}
-
-#slide-3:checked~.slider__text-block .slider__text--3 {
-  font-size: 1.5rem;
-}
-
+#slide-1:checked~.slider__text-block .slider__text--1,
+#slide-2:checked~.slider__text-block .slider__text--2,
+#slide-3:checked~.slider__text-block .slider__text--3,
 #slide-4:checked~.slider__text-block .slider__text--4 {
   font-size: 1.5rem;
 }
@@ -183,18 +161,9 @@ h1 {
     height: 1rem;
   }
 
-  #slide-1:checked~.slider__text-block .slider__text--1 {
-    font-size: 1.25rem;
-  }
-
-  #slide-2:checked~.slider__text-block .slider__text--2 {
-    font-size: 1.25rem;
-  }
-
-  #slide-3:checked~.slider__text-block .slider__text--3 {
-    font-size: 1.25rem;
-  }
-
+  #slide-1:checked~.slider__text-block .slider__text--1,
+  #slide-2:checked~.slider__text-block .slider__text--2,
+  #slide-3:checked~.slider__text-block .slider__text--3,
   #slide-4:checked~.slider__text-block .slider__text--4 {
     font-size: 1.25rem;
   }
@@ -223,18 +192,10 @@ h1 {
   }
 
   @media (max-width: 370px) {
-    #slide-1:checked~.slider__text-block .slider__text--1 {
-      font-size: 1rem;
-    }
 
-    #slide-2:checked~.slider__text-block .slider__text--2 {
-      font-size: 1rem;
-    }
-
-    #slide-3:checked~.slider__text-block .slider__text--3 {
-      font-size: 1rem;
-    }
-
+    #slide-1:checked~.slider__text-block .slider__text--1,
+    #slide-2:checked~.slider__text-block .slider__text--2,
+    #slide-3:checked~.slider__text-block .slider__text--3,
     #slide-4:checked~.slider__text-block .slider__text--4 {
       font-size: 1rem;
     }
