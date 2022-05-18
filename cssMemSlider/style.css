@@ -135,6 +135,14 @@ h1 {
   border: 0.2rem solid #ffffff;
 }
 
+#slide-1:checked~.slider__controls .slider__control-button-1:hover,
+#slide-2:checked~.slider__controls .slider__control-button-2:hover,
+#slide-3:checked~.slider__controls .slider__control-button-3:hover,
+#slide-4:checked~.slider__controls .slider__control-button-4:hover {
+  background-color: transparent;
+  border: 0.2rem solid #63baab;
+}
+
 #slide-1:checked~.slider__text-block .slider__text--1,
 #slide-2:checked~.slider__text-block .slider__text--2,
 #slide-3:checked~.slider__text-block .slider__text--3,
